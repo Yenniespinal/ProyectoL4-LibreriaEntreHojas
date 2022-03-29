@@ -1,7 +1,183 @@
-﻿
+﻿@model List<EntreHojas.BL.Producto>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Inicio";
 }
 
-<h2>Bienvenidos a Entre Hojas! </h2>
+
+<<section class="story-area left-text center-sm-text">
+    <div class="container">
+        <div class="heading"><h3>Libros</h3></div>
+        <div class="row">
+
+        @foreach (var producto in Model)
+        { 
+             <div class="col-lg-3 col-md-4  col-sm-6 ">
+            <div class="center-text mb-30">
+                <div class="ïmg-200x mlr-auto pos-relative">
+                    <h6 class="ribbon-cont color-white"><div class="ribbon primary"></div><b>OFERTA</b></h6>
+                    <img src="~/images/seller-2-200x200.png" alt="">
+                </div>
+                <h5 class="mt-20">@producto.Descripcion</h5>
+                <h4 class="mt-5 color-primary"><b>@producto.Precio</b></h4>
+            </div><!--text-center-->
+        </div><!-- col-md-3 -->
+        }
+        </div><!-- row-->
+
+
+    </div><!-- container -->
+</section>
+<section class="bg-lite-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sided-90x mb-30 ">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-1-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Bajo la misma estrella</b><b class="color-primary float-right">L. 360</b></h5>
+                        <p class="pr-70">Bajo la misma estrella es una novela escrita por John Green, la sexta en su carrera como autor literario, publicada el 10 de enero de 2012. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30 ">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-3-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Perdida</b><b class="color-primary float-right">L.600 </b></h5>
+                        <p class="pr-70">Perdida es una novela de 2012 escrita por la autora estadounidense Gillian Flynn. La obra narra la desaparición de la esposa de Nick Dunne y cómo las sospechas de que se haya cometido un crimen recaen sobre él. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-4-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Drama</b><b class="color-primary float-right">L. 350</b></h5>
+                        <p class="pr-70">Drama es una novela gráfica escrita por la caricaturista estadounidense Raina Telgemeier que se centra en la historia de Callie, una estudiante de secundaria y amante del teatro que trabaja en el equipo de producción de teatro de su escuela. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Coraline</b><b class="color-primary float-right">L.520</b></h5>
+                        <p class="pr-70">Coraline es una novela del escritor Neil Gaiman que mezcla los géneros fantástico y de terror y que fue publicada en 2002 por Bloomsbury y Harper Collins. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30 ">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>El fantasma de Canterville</b><b class="color-primary float-right">L.400</b></h5>
+                        <p class="pr-70">El fantasma de Canterville es una novela del escritor, dramaturgo y poeta británico-irlandés Oscar Wilde, publicado por primera vez en 1887 en dos números. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>El amor y el tequila</b><b class="color-primary float-right">L.450</b></h5>
+                        <p class="pr-70">Segun María José Vela, El amor y el tequila pueden hacerte perder las llaves, el móvil o, incluso, las cenizas de tu marido. Pero ¿qué pasa cuando te hacen perder el norte? Sara viaja con su familia a Cancún tras recibir una noticia terrible. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30 ">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Ligar es como montar en bici</b><b class="color-primary float-right">L.250</b></h5>
+                        <p class="pr-70">Una atrevida y entrañable historia con mucho amor, pinceladas de humor y dosis de sexo. Lunes de agosto. Siete de la mañana: bronca monumental con mi chico; ocho y cuarto: me despiden; nueve y media: sorprendo al muy desgraciado con otra. ¿Qué haríais vosotras, eh?  </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Se Busca Novio</b><b class="color-primary float-right">L.450</b></h5>
+                        <p class="pr-70">Alexis Hall en SE BUSCA: Novio (falso) Perfecto en todos los sentidos Luc pertenece a una familia de estrellas del rock. Su padre se ha pasado veinte años entrando y saliendo de programas de desintoxicación. Ahora que ha regresado, Luc vuelve a estar en el ojo público y una foto comprometedora lo estropea todo. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
+
+<section class="story-area bg-seller color-white pos-relative">
+    <div class="pos-bottom triangle-up"></div>
+    <div class="pos-top triangle-bottom"></div>
+    <div class="container">
+        <h4 class="font-30 font-sm-20  center-text mb-25">Add a fresh <b>Salad</b> to your order</h4>
+    </div><!-- container -->
+</section>
+
+<section>
+    <div class="container">
+        <div class="heading mb-sm-10"><h3>Choose from Pasta</h3></div>
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <div class="sided-220x responsive mb-30 left-text center-sm-text">
+                    <div class="s-left mlr-sm-auto"><img src="~/images/pasta-1-300x300.png" alt="Menu Image"></div>
+                    <div class="s-right">
+                        <h5>Pizza Margherita</h5>
+                        <h4 class="mtb-10"><b class="color-primary">$12.00</b></h4>
+                        <p>Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- col-md-6 -->
+            <div class="col-md-12 col-lg-6">
+                <div class="sided-220x responsive mb-30 left-text center-sm-text">
+                    <div class="s-left mlr-sm-auto"><img src="~/images/pasta-2-300x300.png" alt="Menu Image"></div>
+                    <div class="s-right">
+                        <h5>Pizza Margherita</h5>
+                        <h4 class="mtb-10"><b class="color-primary">$12.00</b></h4>
+                        <p>Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!--col-md-6 -->
+        </div><!-- row-->
+        <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="sided-90x mb-30">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-5-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Pizza Margherita</b><b class="color-primary float-right">$12.00</b></h5>
+                        <p class="pr-70">Maecenas fermentum tortor id fringilla molestie. In hac habitasse platea dictumst. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30 ">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-6-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Italian pasta</b><b class="color-primary float-right">$20.00</b></h5>
+                        <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-7-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Pizza Prosciuto</b><b class="color-primary float-right">$12.00</b></h5>
+                        <p class="pr-70">Maecenas fermentum tortor id fringilla  molestie. In hac habitasse platea dictumst. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+            <div class="col-md-6">
+                <div class="sided-90x mb-30 ">
+                    <div class="s-left"><img class="br-3" src="~/images/menu-8-120x120.jpg" alt="Menu Image"></div><!--s-left-->
+                    <div class="s-right">
+                        <h5 class="mb-10"><b>Broschettas</b><b class="color-primary float-right">$6.00</b></h5>
+                        <p class="pr-70">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium elit elementum quis. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!-- food-menu -->
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
 
